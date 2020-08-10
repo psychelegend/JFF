@@ -1,0 +1,14 @@
+<?php
+
+function getCatId($catname){
+	include "connection.php";
+	$mullai="select id from tbName";
+	$durdur=mysqli_query($con, $mullai);
+	foreach($durdur as $err){
+			$araw[]=$err['id'];
+	}
+	print_r($araw);
+}
+$r=getCatId("wwqq");
+echo $r;
+?>
